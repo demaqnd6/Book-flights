@@ -1,0 +1,56 @@
+@import "main.css";
+@import "CompanyDescription.css";
+@import "offers.css";
+
+.heroImg {
+    background-image: url(../img/hotel.png);
+}
+
+/* start Offers section */
+.offersSection {
+    background-color: white !important;
+}
+/* end Offers section */
+
+/* start hotels section */
+.hotelsAndToursSection {
+    padding-top:calc(var(--padding-buttom)  + 30px);
+    padding-bottom: calc(var(--padding-buttom)  + 60px);
+}
+.hotelsAndToursSection .hotelsAndTours {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 50px;
+}
+
+.hotelsAndToursSection .hotelsAndTours .hotelAndTour{
+    flex: 1;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+}
+.hotelsAndToursSection .hotelsAndTours .hotelAndTour:hover img{
+    transform: scale(1.05);
+}
+.hotelsAndToursSection .hotelsAndTours .hotelAndTour h3{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.hotelsAndToursSection .hotelsAndTours .hotelAndTour span{
+    display: block;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+
+.hotelsAndToursSection .hotelsAndTours .hotelAndTour img{
+max-width: 100%;
+max-height: 100%;
+transition: var(--main-transition) ease-in-out;
+}
+
+
+/* end hotels section */

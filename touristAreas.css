@@ -1,0 +1,132 @@
+@import "main.css";
+@import "textSection.css";
+
+
+
+/* start hero Img tour section  */
+.heroImg_tour {
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-buttom);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 200%;
+    height: 700px;
+    position: relative;  
+}
+.heroImg_tour p{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: var(--line-height);
+}
+@media(max-width:991px){
+.heroImg_tour p{
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+}
+.riyadh {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/riyadh.jpeg);
+}
+.mecca {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/mecca.jpeg);
+}
+.medina {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/medina.png);
+}
+.dammam {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/Dammam.png);
+}
+.asir {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/asir.png);
+}
+.hael {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/hael.png);
+}
+.negran {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/negran.png);
+}
+.tabuk {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/Tabuk.png);
+}
+.arar {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/arar.png);
+}
+.qassim {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/qassim.png);
+}
+.Jazan {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/Jazan.png);
+}
+.paha {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/paha.png);
+}
+.gawf {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/gawf.png);
+}
+/*  */ 
+.baly {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/baly.png);
+}
+.amsterdam {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/Amsterdam.jpg);
+}
+.Cairo {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/Cairo.jpg);
+}
+.london {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/London.jpg);
+}
+.polnda {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/Poland.jpg);
+}
+.Korea {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../photo/Tours/Korea.jpg);
+}
+/* end hero Img tour section  */
+
+/* start text Section section */
+.textSection{
+    margin-top: calc(var(--padding-top) + 30px);
+    margin-bottom: calc(var(--padding-buttom) + 30px);
+}
+.noBg {
+    background-color: #ffff !important;
+}
+.textSection .container{
+    align-items: center;
+}
+.textSection .textSection-img img{
+    box-shadow: 0px 0px 0px 0px red !important;
+    transform: scale(0.9);
+}
+.textSection .textSection-content p{
+    transform: scale(0.9);
+}
+
+
+/* end text Section section */
+
+
+/* start title tour section */
+.title_tour p{
+color: var(--main-color);
+background-color: var(--second-color);
+width: fit-content;
+padding: 15px 25px;
+font-size: 2rem;
+border-radius: 10px;
+margin-right: 30px;
+}
+
+
+/* end title tour section */

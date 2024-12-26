@@ -1,0 +1,429 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:GE_SS;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+@font-face{
+  src: url(../font/GE_SS_Two_Light-1.otf);
+  font-family:GE_SS;
+}
+@font-face{
+  src: url(../font/Rubik-VariableFont_wght.ttf);
+  font-family:rubik;
+}
+
+
+
+  /* القسم الرئيسي */
+  .main{
+    background:url(../photo/background.png) no-repeat;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+
+
+/* استايل الهيدر */
+header {
+  background-color: rgba(0, 0, 0, 0.7); /* خلفية شبه شفافة */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky; /* يظل ثابتًا أثناء التمرير */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* استايل الشعار */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h3 {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ffffff; /* نص أبيض ليتباين مع الخلفية */
+}
+
+.logo h3 span {
+  color: #ff9800; /* لون مميز للنص */
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+}
+
+/* استايل الروابط */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff; /* لون النص أبيض */
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff9800; /* لون التفاعل */
+}
+
+/* استايل أزرار تسجيل الدخول وإنشاء الحساب */
+.auth-buttons button {
+  background: #ff9800;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-left: 10px;
+}
+
+.auth-buttons button:hover {
+  background: #e68a00;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* استايل الفوتر */
+footer {
+  background-color: rgba(0, 0, 0, 0.7); /* خلفية داكنة شفافة مثل الهيدر */
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  clear: both;
+}
+
+/* استايل الشعار في الفوتر */
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.logo-footer a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer a img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-footer a:hover {
+  color: #ff9800; /* لون التفاعل */
+}
+
+/* استايل روابط التواصل الاجتماعي */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.social a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social a:hover img {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/* نص الحقوق */
+.print-footer {
+  color: #cccccc;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.print-footer h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+
+
+.promo-container {
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.7); /* خلفية سوداء شفافة */
+  padding: 20px;
+  border-radius: 10px; /* زوايا مستديرة */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل الحاوية */
+}
+
+.promo-text {
+  font-size: 1.5rem;
+  color: #fff; /* تحويل لون النص إلى الأبيض */
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #FF6F00;
+  font-weight: bold;
+}
+
+.signup-button {
+  background-color: #FF6F00;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #E55C00;
+}
+
+
+/* start services section */
+.services {
+  padding-top: calc(var(--padding-top) + 60px);
+  padding-bottom: calc(var(--padding-buttom) + 60px);
+}
+
+.services h2 {
+  font-size: 3rem;
+  color: var(--main-color);
+  position: relative;
+  max-width: 100%;
+  width: fit-content;
+  margin: 0 auto;
+  z-index: 5;
+}
+
+.services h2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  background-color:#FF6F00;
+  bottom: 10px;
+  border-radius: 3px;
+  z-index: -1;
+}
+
+.services .cards {
+  margin: 100px 0;
+  display: grid;
+  gap: 30px;
+}
+
+.services .cards a:hover .card {
+  transform: scale(1.1);
+}
+
+.services .cards .card {
+  text-align: center;
+  height: 300px;
+  box-shadow: 0px 0px 20px -15px #000;
+  border-radius: 30px;
+  padding: 20px;
+  transition: var(--main-transition) ease-in-out;
+}
+
+
+.services .cards .card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.services .cards .card p {
+  font-size: 1.7rem;
+  color: var(--main-color);
+  font-weight: bold;
+  width: 180px;
+  margin: 20px auto 0;
+}
+
+
+/* end services section */
+
+
+/* start tourist destinations section */
+.destinations {
+  padding-top: calc(var(--padding-top) + 70px);
+  padding-bottom: calc(var(--padding-buttom) + 70px);
+
+}
+
+.destinations h2 {
+  font-size: 3rem;
+  color: var(--main-color);
+  position: relative;
+  max-width: 100%;
+  width: fit-content;
+  margin: 0 auto;
+  z-index: 5;
+}
+
+.destinations h2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  background-color: #FF6F00;
+  bottom: 10px;
+  border-radius: 3px;
+  z-index: -1;
+}
+
+.destinations .cards {
+  margin: 150px 0;
+  display: grid;
+  gap: 100px;
+}
+
+.destinations .cards .card {
+  border-radius: 30px;
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+  box-shadow: 0px 0px 25px -10px #000;
+}
+
+.destinations .cards .card:hover img {
+  transform: scale(1.1);
+}
+
+.destinations .cards .card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .2;
+}
+
+.destinations .cards .card .card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.destinations .cards .card .card-img img {
+  width: 100%;
+  height: 100%;
+  transition: var(--main-transition) ease-in-out;
+}
+
+.destinations .cards .card h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2rem;
+  letter-spacing: var(var(--letter-spacing) + 0.5px);
+  z-index: 50;
+}
+
+/* end tourist destinations section */
+
+
+/* start */
+.offersSection {
+  background-color: var(--section-bg);
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-buttom);
+}
+.offersSection h2{
+  color: var(--main-color);
+  background-color: #FF6F00;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 7px;
+  margin-bottom: 50px;
+}
+
+.offersSection .cards{
+  display: grid;
+  gap: 20px;
+}
+
+.offersSection .cards .card{
+   width: fit-content;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+  margin: 0 auto;
+  transition: var(--main-transition) ease-in-out;
+}
+.offersSection .cards .card:hover {
+  transform: scale(1.05);
+}
+
+
+.offersSection .cards .card .card-img img{
+  max-width: 100%;
+  /* max-height: 100%; */
+  height: 250px ;
+}
+
+.offersSection .cards .card h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.offersSection .cards .card p{
+  font-size: 1.1rem;
+  margin-bottom:20px;
+}
+
+.offersSection .cards .card span{
+  background-color: white;
+  /* box-shadow: 0px 0px 5px -1px #000; */
+padding: 7px 14px;
+font-size: 1.3rem;
+position: absolute;
+top: 10px;
+left: 10px;
+color: var(--main-color);
+border-radius: 3px;
+}
+/* end */

@@ -1,0 +1,143 @@
+@import "main.css";
+
+/* start hero Img join Us  */
+.heroImg_joinUs {
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-buttom);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 800px;
+    position: relative;
+}
+
+.heroImg_joinUs p {
+    position: absolute;
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bold;
+    top: calc(50% + 100px);
+    left: 200px;
+    transform: translateY(-50%);
+    line-height: var(--line-height);
+    text-align: center;
+}
+
+@media(max-width:991px) {
+    .heroImg_joinUs p {
+        font-size: 2rem;
+        top: calc(50% + 100px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+.employment {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/joinUs/employment.png);
+}
+
+.tourGuides {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/joinUs/tourGuides.png);
+}
+
+.volunteers {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/joinUs/volunteers.png);
+}
+
+.investors {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/joinUs/investors.png);
+}
+
+/* end hero Img join Us  */
+
+/* start hero Img join Us form  */
+.joinUs_form {
+    padding-top: calc(var(--padding-top) + 60px);
+    padding-bottom: calc(var(--padding-buttom) + 60px);
+}
+
+.joinUs_form form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.joinUs_form input,
+.heroImg_joinUs .comment {
+    display: block;
+    padding: 20px 10px 20px 0;
+    border: 1px solid var(--main-color);
+    outline: none;
+}
+
+.joinUs_form input,
+.joinUs_form label[for="cv"] {
+    width: calc((100% / 3) - 30px);
+}
+
+.joinUs_form input::-moz-placeholder,
+.joinUs_form label[for="cv"]::-moz-placeholder,
+.joinUs_form .comment::-moz-placeholder {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.joinUs_form input::-webkit-input-placeholder,
+.joinUs_form label[for="cv"]::-webkit-input-placeholder,
+.joinUs_form .comment::-webkit-input-placeholder {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.joinUs_form input::placeholder,
+.joinUs_form label[for="cv"]::placeholder,
+.joinUs_form .comment::placeholder {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media(max-width:991px) {
+
+    .joinUs_form input,
+    .joinUs_form label[for="cv"] {
+        width: 100%;
+    }
+}
+
+.joinUs_form label[for="cv"] {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.joinUs_form label[for="cv"] i {
+    color: var(--main-color);
+    margin-right: 10px;
+}
+
+.joinUs_form .comment {
+    width: calc(100% - 30px);
+    border: 1px solid #999999;
+    margin: 5px 0;
+    padding: 3px;
+    outline: none;
+    border: 2px solid var(--main-color);
+}
+
+.joinUs_form input[type="submit"] {
+    width: 200px;
+    color: var(--main-color);
+    border: 5px solid var(--main-color) !important;
+    font-size: 1.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* end hero Img join Us form  */

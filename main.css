@@ -1,0 +1,171 @@
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+:root {
+	--main-color: #063B6D;
+    --second-color: #54CA9A;
+    --padding-top: 60px;
+    --padding-buttom: 60px;
+    --line-height: 1.7;
+    --letter-spacing: 0.5px;
+    --main-transition: .3s;
+    --section-bg:#F5F5F5;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 9000px; */
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small  */
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium  */
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large  */
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.destinations {
+    background-color: var(--section-bg);
+    padding: var(--padding-top) 0;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--main-color);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap; /* يضمن الالتفاف عند ضيق العرض */
+    gap: 20px; /* مسافة بين الكروت */
+    justify-content: center; /* جعل الكروت في الوسط */
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s var(--main-transition), box-shadow 0.3s var(--main-transition);
+    width: 300px; /* عرض الكارت */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* تأثير عند التمرير */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img img {
+    width: 100%;
+    height: 200px; /* ضبط ارتفاع الصورة */
+    object-fit: cover; /* لتناسب الصورة داخل الحاوية */
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    padding: 15px 10px;
+    color: var(--main-color);
+}
+
+
+
+.offersSection {
+    background-color: var(--section-bg);
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-buttom);
+    text-align: center;
+}
+.offersSection h2{
+
+        color: #000;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    
+}
+
+
+
+
+.offersSection .cards .card{
+     width: fit-content;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+    margin: 0 auto;
+    transition: var(--main-transition) ease-in-out;
+}
+.offersSection .cards .card:hover {
+    transform: scale(1.05);
+}
+
+
+.offersSection .cards .card .card-img{
+    
+}
+
+.offersSection .cards .card .card-img img{
+    max-width: 100%;
+    /* max-height: 100%; */
+    height: 250px ;
+}
+
+.offersSection .cards .card h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.offersSection .cards .card p{
+    font-size: 1.1rem;
+    margin-bottom:20px;
+}
+
+.offersSection .cards .card span{
+    background-color: white;
+    /* box-shadow: 0px 0px 5px -1px #000; */
+padding: 7px 14px;
+font-size: 1.3rem;
+position: absolute;
+top: 10px;
+left: 10px;
+color: var(--main-color);
+border-radius: 3px;
+}

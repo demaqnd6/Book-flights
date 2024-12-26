@@ -1,0 +1,61 @@
+@import "main.css";
+@import "home.css";
+
+.heroImg {
+    background-image: url(../img/CompanyDescription.jpg);
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+
+@media(max-width:991px) {
+    .heroImg {
+        height: 100vh;
+    }
+}
+
+/* start textSection */
+.textSection {
+    background-color: white;
+    padding-top: calc(var(--padding-top) + 100px);
+    padding-bottom: calc(var(--padding-bottom) + 100px);
+}
+
+.textSection .container .textSection-img img {
+    box-shadow: none;
+}
+
+/* end textSection */
+
+/* start The goals of the company section */
+
+
+.services h2 {
+    margin: 0;
+}
+
+.services h2::before {
+    display: none;
+}
+
+.services .cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.services .cards .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: var(--line-height);
+    transition: var(--main-transition) ease-in-out;
+}
+
+.services .cards .card:hover {
+    transform: scale(1.1);
+}
+
+
+/* end The goals of the company section */

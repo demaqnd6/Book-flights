@@ -1,0 +1,61 @@
+@import "main.css";
+@import "hotel.css";
+
+/* start hero Img */
+.heroImg {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Tours/Tours.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.heroImg span {
+    color: var(--second-color);
+}
+
+.heroImg p {
+    color: #ffff;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* end hero Img */
+
+/* start Various tours section  */
+.VariousTours  {
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-buttom);
+}
+.VariousTours .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px
+}
+
+.VariousTours .cards .card {
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px -8px #000;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.VariousTours .cards .card p {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+.VariousTours .cards .card:hover img {
+    transform: scale(1.2);
+}
+
+
+.VariousTours .cards .card img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: var(--main-transition) ease-in-out;
+}
+
+/* end Various tours section  */
